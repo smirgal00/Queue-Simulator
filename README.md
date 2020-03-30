@@ -1,0 +1,1 @@
+The JAR file is located in the "Tests and JAR" folder. I created it in order to group the test files.
