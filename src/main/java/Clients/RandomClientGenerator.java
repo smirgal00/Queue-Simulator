@@ -21,11 +21,11 @@ public class RandomClientGenerator {
 
         Persons = new ArrayList<Person>();
 
-        for (int i = 0; i < nrOfClients; i++) {
+        for (int i = 0; i < this.nrOfClients; i++) {
             Person temp = new Person(
                     i + 1,
-                    new Random().nextInt((arrivalTimeMax - arrivalTimeMin) + 1) + arrivalTimeMin,
-                    new Random().nextInt((serviceTimeMax - serviceTimeMin) + 1) + serviceTimeMin
+                    new Random().nextInt((this.arrivalTimeMax - this.arrivalTimeMin) + 1) + this.arrivalTimeMin,
+                    new Random().nextInt((this.serviceTimeMax - this.serviceTimeMin) + 1) + this.serviceTimeMin
             );
 
             Persons.add(temp);
